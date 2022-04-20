@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson 3</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#introduction">Вступ</a>
+                </li>
+                <li>
+                    <a href="#section">HTML5 section елемент</a>
+                </li>
+                <li>
+                    <a href="#section-article">HTML5 article елемент</a>
+                </li>
+                <li>
+                    <a href="#section-header">HTML5 header елемент</a>
+                </li>
+                <li>
+                    <a href="#section-footer">HTML5 footer елемент</a>
+                </li>
+            </ul>
+        </nav>
+        <h1>Семантика, посилання і HTML5 теги</h1>
+    </header>
+
+    <main>
+        <img src="./img/15_HTML5_v21.jpeg" alt="html image" width="500px">
+        <section id="introduction">
+            <article>
+                <h2>HTML5 Семантичні елементи</h2>
+                <p>Семантичний елемент чітко описує його значення як для браузера, так і для розробника. Семантичний елемент чітко описує його значення як для браузера, так і для розробника. Приклади не семантичних елементів: <code>&lt;div&gt;</code>і
+                    нічого не говорить про його вміст.
+                    <p>Приклади семантичних елементів:<code>&lt;form&gt; &lt;article&gt; &lt;table&gt;</code> - чітко визначає його зміст.</p>
+                    <h2>Підтримка браузерів</h2>
+                    <img src="./img/browser.jpeg" width="200px" alt="browses">
+                    <p>
+                        Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах. Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи". Прочитайте про це в
+                        <a href="https://webkyrs.info/post/chto-takoe-semantika-i-kak-eto-otnositsia-k-html" target="_blank">підтримці браузера HTML5</a>
+                    </p>
+
+
+                    <h2>Нові семантичні елементи в HTML5</h2>
+                    <p>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</p>
+                    <ul>
+                        <li><code>&lt;section&gt;</code></li>
+                        <li><code>&lt;article&gt;</code></li>
+                        <li><code>&lt;header&gt;</code></li>
+                        <li><code>&lt;footer&gt;</code></li>
+                    </ul>
+            </article>
+        </section>
+        <section id="section">
+            <h2>HTML5 елемент <code>&lt;section&gt;</code></h2>
+            <p> Елемент <code>&lt;section&gt;</code> визначає розділ в документі.
+                <br>Згідно з документацією в3к 'с HTML5: "розділ представляє собою тематичну угруповання контенту, зазвичай з заголовком".<br>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, змісту і контактної інформації.
+            </p>
+            <figure>
+                <img src="./img/section example.jpeg" alt="Example tag section" width="400px">
+                <figcaption>Приклад тега <code>&lt;section&gt;</code></figcaption>
+            </figure>
+        </section>
+        <section id="section-article"></section>
+        <h2>HTML5 <code>&lt;article&gt;</code>елемент</h2>
+        <p>Елемент<code>&lt;article&gt;</code>визначає незалежний, автономний вміст. Стаття повинна мати сенс самостійно, і вона повинна мати можливість читати його незалежно від іншої частини веб-сайту. При створенні структури документа специфікація
+            HTML 5 дозволяє поміщати одні елементи article в інші. Це використовується для того, щоб показати те, як контенти цих елементів відносяться один до одного. А саме передати те, що вміст дочірніх елементів.Приклади того, де можна використовувати
+            елемент:
+        </p>
+        <ul>
+            <li>Повідомлення на форумі</li>
+            <li>Блозі</li>
+            <li>Газетна стаття</li>
+        </ul>
+        <figure>
+            <img src="./img/article example.jpeg" alt="Example tag article" width="400px">
+            <figcaption>Приклад тега <code>&lt;article&gt;</code></figcaption>
+        </figure>
+        <section id="header-section">
+            <h2>HTML5 <code>&lt;header&gt;</code>елемент</h2>
+            <p>Елемент<code>&lt;header&gt;</code>задає заголовок для документа або розділу.Елемент<code>&lt;header&gt;</code>повинен використовуватися в якості контейнера для вступного змісту. В одному документі може бути кілька елементів <code>&lt;header&gt;</code>.
+                У наступному прикладі визначається заголовок для статті:
+            </p>
+            <figure>
+                <img src="./img/example header.jpeg" alt=" Example tag header " width="400px ">
+                <figcaption>Приклад тега <code>&lt;article&gt;</code></figcaption>
+            </figure>
+        </section>
+        <section id="section-footer">
+            <h2>HTML5 <code>&lt;footer&gt;</code> елемент</h2>
+            <p>
+                Елемент <code>&lt;footer&gt;</code> вказує нижній колонтитул для документа або розділу. Нижній колонтитул зазвичай містить автора документа, інформацію про авторське право, посилання на умови використання, контактні дані і т.д. В одному
+                документі може бути кілька елементів <code>&lt;footer&gt;</code>.
+            </p>
+            <figure>
+                <img src="./img/example footer.jpeg" alt=" Example tag footer" width="400px">
+                <figcaption>Приклад тега <code>&lt;article&gt;</code></figcaption>
+            </figure>
+        </section>
+        <form id="test">
+            <h3>Для чого використовуються семантичні теги розмітки?</h3>
+            <label><input type="radio" name="quastion" value="1" checked> Щоб зробити контент сторінки привабливим</label> <br>
+            <label><input type="radio" name="quastion" value="2">Щоб не використовувати div</label><br>
+            <label><input type="radio" name="quastion" value="3">Щоб побудувати логічну структуру документа, яка буде зрозуміла і браузерам, і веб-розробникам</label>
+
+        </form>
+    </main>
+
+    <footer>
+        <h3>Foolish Developer</h3>
+        <div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Tag</a>
+                </li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+        <p>copyright &copy;2021 <a href="#">foolishdeveloper</a></p>
+    </footer>
+
+</body>
+
+</html>
