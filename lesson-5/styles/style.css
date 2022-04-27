@@ -1,0 +1,84 @@
+        body {
+            background: #b311aa url(/assets/img/background-image.jpeg) no-repeat center;
+            background-size: cover;
+        }
+        
+        .wrap {
+            max-width: 1140px;
+            padding: 0 15px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        h1 {
+            padding: 20px;
+            font-family: 'Libre Bodoni', serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 140%;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            padding: 20px 0 15px 0;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 400;
+            color: #252323;
+        }
+        
+        .avatar {
+            padding-bottom: 15px;
+            border-radius: 50%;
+        }
+        
+        .contact-list {
+            padding: 10px 5px;
+            list-style: none;
+            border-radius: 20%;
+            border: 2px solid #0b0a2e;
+            width: 500px;
+            box-shadow: 5px 5px rgb(93, 19, 95);
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .contact-link {
+            text-decoration: none;
+            color: #0b0a2e;
+            padding: 20px;
+        }
+        
+        .icon-map::before {
+            content: url('/assets/img/icons8-location-24.png');
+        }
+        
+        .icon-mail::before {
+            content: url(/assets/img/icons8-mail-24.png);
+        }
+        
+        .icon-tel::before {
+            content: url(/assets/img/icons8-phone-24.png);
+        }
+        
+        p,
+        .list-languages {
+            font-family: 'Karla', sans-serif;
+        }
+        
+        .line {
+            padding-top: 25px;
+            border-bottom: 1px solid #828282;
+        }
+        
+        .list-skills {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid #180a2e;
+            border-radius: 25px 50px;
+            list-style-type: square;
+        }
+        
+        .contact {
+            padding: 20px;
+        }
