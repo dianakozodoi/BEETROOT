@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all .1s ease-in;
+}
+
+body {
+    width: 793px;
+    min-height: 507px;
+    background: #3B3F45;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin: 0 auto;
+}
+
+.header {
+    width: 793px;
+    height: 82px;
+    background: #4A4F56;
+    transition: height 2s;
+}
+
+.header:hover {
+    height: 120px;
+    background: linear-gradient(45deg, rgb(81, 92, 96) 41%, rgb(182, 82, 126));
+}
+
+h1,
+h2 {
+    text-align: center;
+    color: #FF8984;
+}
+
+.title {
+    padding-top: 19px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.subtitle {
+    padding: 4px 0 35px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.container {
+    width: 534px;
+    height: 45px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.label-container {
+    display: block;
+    width: 534px;
+    height: 45px;
+    position: relative;
+    padding: 10px;
+    padding-left: 35px;
+    background: #88839E;
+    border: 2px solid transparent rgba(80, 62, 62, 0.05);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.label-container .checkbox-input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 6px;
+    left: 5px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    margin-left: 10px;
+}
+
+.mark {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-left: 16px;
+}
+
+.checkbox-input:checked~span {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+.label-container:hover {
+    background: #625E77;
+    border-bottom: 3px solid #FFFFFF;
+    border-top: 3px solid #FFFFFF;
+}
+
+.label-container:active {
+    background: #FF8984;
+    ;
+}
+
+.label-container:nth-child(2n) {
+    background: #7A7593;
+}
+
+.checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.label-container .checkbox-input:checked~.checkmark::after {
+    display: block;
+}
+
+.container .checkmark::after {
+    left: 8px;
+    top: 4px;
+    width: 8px;
+    height: 12px;
+    border: 3px solid #000000;
+    border-width: 0 4px 4px 0;
+    transform: rotate(45deg);
+}
+
+.small-mark {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFFFFF;
+}
+
+.small-mark::before {
+    content: '(';
+    color: #FFFFFF;
+}
+
+.small-mark::after {
+    content: ')';
+    color: #FFFFFF;
+}
+
+.btn {
+    margin-top: 45px;
+    width: 534px;
+    height: 45px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background: #4A4F56;
+    color: #FF8984;
+    border: none;
+    transition: box-shadow 2s;
+}
+
+.btn::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url(/lesson-6/icons/heart_icon.svg);
+    background-repeat: no-repeat;
+    background-size: 24px;
+    background-position: center;
+}
+
+.btn:hover {
+    transition: all 0.2s;
+    box-shadow: 0px 5px 10px 2px rgba(5, 7, 7, 0.31);
+    background: #625E77;
+}
