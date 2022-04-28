@@ -97,6 +97,10 @@ h2 {
     color: #9B96AC;
 }
 
+.label-container:nth-child(2n) {
+    background: #7A7593;
+}
+
 .label-container:hover {
     background: #625E77;
     border-bottom: 3px solid #FFFFFF;
@@ -108,9 +112,10 @@ h2 {
     ;
 }
 
-.label-container:nth-child(2n) {
+
+/* .label-container:nth-child(2n) {
     background: #7A7593;
-}
+} */
 
 .checkmark::after {
     content: "";
