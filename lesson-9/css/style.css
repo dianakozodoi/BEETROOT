@@ -1,0 +1,269 @@
+        @font-face {
+            font-family: 'Gilroy-Medium';
+            src: url('../fonts/Gilroy-Medium.woff2') format('woff2');
+        }
+        
+        @font-face {
+            font-family: 'Gilroy-Bold';
+            src: url('../fonts/Gilroy-Bold.woff2') format('woff2');
+        }
+        
+        *,
+         ::before,
+         ::after {
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gilroy-Medium';
+            font-size: 18px;
+            color: #070707;
+        }
+        
+        h1,
+        h2,
+        h3,
+        figure {
+            margin: 0;
+        }
+        
+        h2 {
+            font-family: 'Gilroy-Bold';
+            font-weight: 400;
+            font-size: 34px;
+            line-height: 42px;
+            color: #070707;
+            text-align: center;
+        }
+        
+        p {
+            line-height: 22px;
+            text-align: center;
+        }
+        
+        .header {
+            padding-top: 33px;
+        }
+        
+        .container {
+            max-width: 1445px;
+            padding: 0px 252px;
+        }
+        
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .nav-link,
+        .lang-link {
+            font-family: 'Gilroy-Bold';
+            text-decoration: none;
+            color: #828282;
+        }
+        
+        .nav-link:hover {
+            color: #070707;
+        }
+        
+        .line {
+            margin-top: 31px;
+            border: 1px solid #828282;
+        }
+        
+        .section-info {
+            max-width: 940px;
+            margin: 0 auto;
+        }
+        
+        .container-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        
+        .title-info {
+            font-family: 'Gilroy-Bold';
+            font-size: 48px;
+            line-height: 59px;
+            width: 124px;
+            margin-top: 40px;
+        }
+        
+        .subtitle-info {
+            font-family: 'Gilroy-Medium';
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            margin-top: 94px;
+            max-width: 155px;
+        }
+        
+        .lang-switcher {
+            margin-top: 70px;
+            margin-right: -20px;
+            transform: rotate(-90deg);
+        }
+        
+        .lang-link {
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        
+        .lang-link.active {
+            color: #000;
+        }
+        
+        .info-wrap-picture {
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        
+        .section-about {
+            margin-top: 104px;
+            background: #F6F6F6;
+            min-height: 506px;
+            text-align: center;
+        }
+        
+        .section-about p {
+            max-width: 485px;
+            margin: auto;
+        }
+        
+        .title-about {
+            padding-top: 120px;
+            margin-bottom: 18px;
+        }
+        
+        .section-skills {
+            padding-top: 91px;
+            margin-bottom: 110px;
+        }
+        
+        .skills-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .title-skills {
+            margin-bottom: 70px;
+        }
+        
+        .subtitle-skills {
+            margin: 0;
+            margin-bottom: 80px;
+        }
+        
+        .item-skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .item-skills span {
+            display: block;
+            margin-top: 23px;
+            margin-bottom: 40px;
+            font-family: 'Gilroy-Bold';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #828282;
+            max-width: 80px;
+        }
+        
+        .section-portfolio {
+            padding-top: 112px;
+            background: #F6F6F6;
+        }
+        
+        .title-portfolio {
+            margin-bottom: 47px;
+        }
+        
+        .potfolio-item {
+            padding-bottom: 100px;
+        }
+        
+        .portfolio-link {
+            display: block;
+            text-align: center;
+            color: #070707;
+        }
+        
+        .potfolio-item img {
+            margin-bottom: 40px;
+        }
+        
+        .potfolio-item img:hover {
+            box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
+        }
+        
+        .portfolio-link:hover {
+            text-decoration: none;
+        }
+        
+        .contact-footer {
+            padding-top: 115px;
+            padding-bottom: 123px;
+        }
+        
+        .footer-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .footer-title {
+            margin-bottom: 20px;
+        }
+        
+        .footer-wrapper p {
+            max-width: 275px;
+            margin-bottom: 30px;
+        }
+        
+        .btn-footer {
+            width: 166px;
+            height: 38px;
+            margin-bottom: 85px;
+            background: #070707;
+            border: 0;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        
+        .btn-footer span {
+            font-family: 'Gilroy-Bold';
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        
+        .btn-footer:hover {
+            box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
+        }
+        
+        .social-contact-link {
+            display: flex;
+            justify-content: space-between;
+            max-width: 342px;
+            margin: 0 auto;
+        }
+        
+        .contact-text {
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #828282;
+            margin: 0;
+            margin-top: 45px;
+        }

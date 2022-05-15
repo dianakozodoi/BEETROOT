@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Roboto&display=swap');
+* ::before,
+::after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+p {
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    background: #FFFFFF;
+    color: #16133D;
+    margin: 0;
+}
+
+.line {
+    width: 1155px;
+    border-bottom: 1px solid #EFEEF3;
+    margin-top: 45px;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 156px;
+}
+
+.header {
+    padding-top: 38px;
+    height: 80px;
+}
+
+.services {
+    padding-top: 55px;
+    padding-bottom: 69px;
+}
+
+.title-services {
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    margin-bottom: 35px;
+}
+
+.subtitle-services {
+    margin-bottom: 17px;
+    line-height: 21px;
+    color: #7690A8
+}
+
+.services-cards {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.services-column {
+    max-width: 360px;
+    margin-right: 39px;
+}
+
+.services-card-title {
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+}
+
+.card-item {
+    padding: 41px;
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+}
+
+.services-column:last-child {
+    margin: 0;
+}
+
+.services-card-title+p {
+    max-width: 274px;
+    min-height: 84px;
+    margin-bottom: 29px;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.services-card-more {
+    text-decoration: none;
+    color: #16133D;
+}
+
+.services-card-more:hover {
+    color: #3DB370;
+    text-decoration: underline;
+}
+
+.services-card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+}
+
+.icon-hover:hover {
+    fill: #16133D;
+    stroke: #3DB370;
+    stroke-width: 2px;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+footer {
+    background: #16133D;
+    padding-top: 36px;
+    padding-bottom: 46px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.social-footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    background: #EFEEF3;
+    border-radius: 5px;
+}
+
+.social-link:last-child {
+    margin-right: 0;
+}
+
+.social-icon {
+    height: 20px;
+    width: 20px;
+}
+
+.social-icon:hover {
+    fill: #3DB370;
+}
