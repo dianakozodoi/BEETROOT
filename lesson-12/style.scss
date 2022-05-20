@@ -1,0 +1,44 @@
+            .container {
+                display: grid;
+                grid-template-areas: "header header header" "sidebar section section" "footer footer footer";
+                gap: 10px;
+                height: 100vh;
+            }
+            
+            .element,
+            .sab-element {
+                padding: 10px;
+                border-radius: 10px;
+                border: 2px dotted rgba(49, 45, 45, 0.533);
+                background: rgb(238, 174, 202);
+            }
+            
+            .sab-element {
+                &:hover {
+                    transform: scale(2);
+                    transform: translate(0, 50px);
+                }
+            }
+            
+            .header {
+                grid-area: header;
+            }
+            
+            .sidebar {
+                grid-area: sidebar;
+                align-self: start;
+                padding: 50px;
+                background: rgb(238, 174, 202);
+                background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+            }
+            
+            .section {
+                grid-area: section;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                gap: 5px;
+            }
+            
+            .footer {
+                grid-area: footer;
+            }

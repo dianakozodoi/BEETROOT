@@ -1,0 +1,61 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "sidebar section section" "footer footer footer";
+  gap: 10px;
+  height: 100vh;
+}
+
+.element,
+.sab-element {
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px dotted rgba(49, 45, 45, 0.533);
+  background: #eeaeca;
+}
+
+.sab-element:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transform: translate(0, 50px);
+          transform: translate(0, 50px);
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding: 50px;
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+}
+
+.section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: section;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  gap: 5px;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+/*# sourceMappingURL=style.css.map */
