@@ -1,0 +1,336 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #272838;
+  overflow-y: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (300px)[2];
+      grid-template-rows: repeat(2, 300px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+
+.wrapper .card {
+  background-image: url(../assets/images/card-back.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.wrapper .card:hover {
+  -webkit-animation: paused;
+          animation: paused;
+}
+
+.item-1 {
+  -webkit-animation: flip-card-1 2s ease-in-out infinite 3s;
+          animation: flip-card-1 2s ease-in-out infinite 3s;
+}
+
+@-webkit-keyframes flip-card-1 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-quin.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-1 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-quin.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-2 {
+  -webkit-animation: flip-2 2s ease-in-out infinite 5s;
+          animation: flip-2 2s ease-in-out infinite 5s;
+}
+
+@-webkit-keyframes flip-2 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-ace-black.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-2 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-ace-black.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-3 {
+  -webkit-animation: flip-card-3 2s ease-in-out infinite 7s;
+          animation: flip-card-3 2s ease-in-out infinite 7s;
+}
+
+@-webkit-keyframes flip-card-3 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-king.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-3 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-king.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-4 {
+  -webkit-animation: flip-card-4 2s ease-in-out infinite 9s;
+          animation: flip-card-4 2s ease-in-out infinite 9s;
+}
+
+@-webkit-keyframes flip-card-4 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-three.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-4 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-three.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-5 {
+  -webkit-animation: flip-card-5 2s ease-in-out infinite 11s;
+          animation: flip-card-5 2s ease-in-out infinite 11s;
+}
+
+@-webkit-keyframes flip-card-5 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-ace-red.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-5 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-ace-red.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-6 {
+  -webkit-animation: flip-card-6 2s ease-in-out infinite 13s;
+          animation: flip-card-6 2s ease-in-out infinite 13s;
+}
+
+@-webkit-keyframes flip-card-6 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-jack.png);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-6 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-jack.png);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-7 {
+  -webkit-animation: flip-card-7 2s ease-in-out infinite 15s;
+          animation: flip-card-7 2s ease-in-out infinite 15s;
+}
+
+@-webkit-keyframes flip-card-7 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-five.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-7 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-five.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+.item-8 {
+  -webkit-animation: flip-card-8 2s ease-in-out infinite 17s;
+          animation: flip-card-8 2s ease-in-out infinite 17s;
+}
+
+@-webkit-keyframes flip-card-8 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-two.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+
+@keyframes flip-card-8 {
+  0% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+    background-image: url(../assets/images/card-front-two.svg);
+  }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+}
+/*# sourceMappingURL=index.css.map */

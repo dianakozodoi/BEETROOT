@@ -1,22 +1,25 @@
 @font-face {
-  font-family: "Gilroy-Medium";
+  font-family: 'Gilroy-Medium';
   src: url("../fonts/Gilroy-Medium.woff2") format("woff2");
 }
+
 @font-face {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   src: url("../fonts/Gilroy-Bold.woff2") format("woff2");
 }
+
 *,
 ::before,
 ::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
   height: 100%;
-  font-family: "Gilroy-Medium";
+  font-family: 'Gilroy-Medium';
   font-size: 18px;
   color: #070707;
 }
@@ -30,7 +33,7 @@ ul {
 }
 
 h2 {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-weight: 400;
   font-size: 34px;
   line-height: 42px;
@@ -50,10 +53,17 @@ p {
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 @media screen and (max-width: 600px) {
   .nav {
     display: none;
@@ -61,9 +71,14 @@ p {
 }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   list-style: none;
   padding: 30px 0px 30px;
@@ -72,13 +87,14 @@ p {
 
 .nav-link,
 .lang-link {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   text-decoration: none;
   color: #828282;
 }
+
 @media screen and (max-width: 600px) {
   .nav-link,
-.lang-link {
+  .lang-link {
     display: none;
   }
 }
@@ -88,22 +104,34 @@ p {
 }
 
 .container-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   max-width: 940px;
   margin: auto;
 }
+
 @media screen and (max-width: 600px) {
   .container-info {
-    flex-direction: column;
-    align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 0 26px;
   }
 }
 
 .title-info {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-size: 48px;
   line-height: 59px;
   width: 124px;
@@ -111,13 +139,14 @@ p {
 }
 
 .subtitle-info {
-  font-family: "Gilroy-Medium";
+  font-family: 'Gilroy-Medium';
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   margin-top: 94px;
   max-width: 155px;
 }
+
 @media screen and (max-width: 600px) {
   .subtitle-info {
     margin-top: 23px;
@@ -127,7 +156,8 @@ p {
 .lang-switcher {
   margin-top: 70px;
   margin-right: -20px;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .lang-link {
@@ -140,9 +170,14 @@ p {
 }
 
 .mobile-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #ffff;
   position: fixed;
   top: 0;
   left: 0;
@@ -160,13 +195,15 @@ p {
 .mobile-list {
   padding-top: 68px;
 }
+
 .mobile-list li {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-size: 34px;
   line-height: 42px;
   list-style: none;
   margin-bottom: 68px;
 }
+
 .mobile-list a {
   color: #828282;
   text-decoration: none;
@@ -179,6 +216,7 @@ p {
   right: 30px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 600px) {
   .burger-menu {
     display: block;
@@ -192,6 +230,7 @@ p {
   right: 20px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 600px) {
   .burger-icon-close {
     display: block;
@@ -199,10 +238,15 @@ p {
 }
 
 .info-wrap-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 50px;
 }
+
 @media screen and (max-width: 600px) {
   .info-wrap-picture {
     display: none;
@@ -212,11 +256,13 @@ p {
 .info-wrap-picture-mini {
   display: none;
 }
+
 @media screen and (max-width: 600px) {
   .info-wrap-picture-mini {
     display: block;
   }
 }
+
 @media screen and (max-width: 600px) {
   .info-wrap-picture-mini img {
     display: block;
@@ -239,6 +285,7 @@ p {
   margin: auto;
   margin-bottom: 30px;
 }
+
 @media screen and (max-width: 600px) {
   .section-about p {
     max-width: 316px;
@@ -260,14 +307,25 @@ p {
 }
 
 .skills-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 @media screen and (max-width: 600px) {
   .skills-wrapper {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -281,11 +339,21 @@ p {
 }
 
 .item-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 @media screen and (max-width: 600px) {
   .item-skills {
     margin-bottom: 81px;
@@ -296,7 +364,7 @@ p {
   display: block;
   margin-top: 23px;
   margin-bottom: 40px;
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -306,12 +374,20 @@ p {
 }
 
 .section-portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 112px;
   background: #F6F6F6;
 }
+
 @media screen and (max-width: 600px) {
   .section-portfolio {
     padding-bottom: 80px;
@@ -323,11 +399,19 @@ p {
 }
 
 .potfolio-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 100px;
 }
+
 @media screen and (max-width: 600px) {
   .potfolio-item {
     padding: 0px 30px;
@@ -345,7 +429,8 @@ p {
 }
 
 .potfolio-item img:hover {
-  box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
 }
 
 .portfolio-link:hover {
@@ -356,6 +441,7 @@ p {
   padding-top: 115px;
   padding-bottom: 123px;
 }
+
 @media screen and (max-width: 600px) {
   .contacts-footer {
     padding: 0px 29px 90px 29px;
@@ -363,14 +449,22 @@ p {
 }
 
 .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-title {
   margin-bottom: 20px;
 }
+
 @media screen and (max-width: 600px) {
   .footer-title {
     margin-top: 82px;
@@ -391,6 +485,7 @@ p {
   border-radius: 30px;
   cursor: pointer;
 }
+
 @media screen and (max-width: 600px) {
   .btn-footer {
     width: 316px;
@@ -399,7 +494,7 @@ p {
 }
 
 .btn-footer span {
-  font-family: "Gilroy-Bold";
+  font-family: 'Gilroy-Bold';
   text-align: center;
   color: #FFFFFF;
   font-size: 18px;
@@ -407,12 +502,17 @@ p {
 }
 
 .btn-footer:hover {
-  box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 7px 21px 7px rgba(0, 0, 0, 0.19);
 }
 
 .social-contacts-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 60px;
 }
 
@@ -424,5 +524,4 @@ p {
   margin: 0;
   margin-top: 45px;
 }
-
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #272838;
+    overflow-y: hidden;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    justify-content: center;
+    gap: 20px;
+    .card {
+        background-image: url(../assets/images/card-back.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            animation: paused;
+        }
+    }
+}
+
+.item-1 {
+    animation: flip-card-1 2s ease-in-out infinite 3s;
+    @keyframes flip-card-1 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-quin.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-2 {
+    animation: flip-2 2s ease-in-out infinite 5s;
+    @keyframes flip-2 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-ace-black.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-3 {
+    animation: flip-card-3 2s ease-in-out infinite 7s;
+    @keyframes flip-card-3 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-king.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-4 {
+    animation: flip-card-4 2s ease-in-out infinite 9s;
+    @keyframes flip-card-4 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-three.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-5 {
+    animation: flip-card-5 2s ease-in-out infinite 11s;
+    @keyframes flip-card-5 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-ace-red.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-6 {
+    animation: flip-card-6 2s ease-in-out infinite 13s;
+    @keyframes flip-card-6 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-jack.png);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-7 {
+    animation: flip-card-7 2s ease-in-out infinite 15s;
+    @keyframes flip-card-7 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-five.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
+
+.item-8 {
+    animation: flip-card-8 2s ease-in-out infinite 17s;
+    @keyframes flip-card-8 {
+        0% {
+            transform: rotateY(180deg);
+        }
+        50% {
+            transform: rotateY(360deg);
+            background-image: url(../assets/images/card-front-two.svg);
+        }
+        100% {
+            transform: rotateY(180deg);
+        }
+    }
+}
