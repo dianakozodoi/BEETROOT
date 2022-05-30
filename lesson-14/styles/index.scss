@@ -1,0 +1,404 @@
+@import "./vars_and_mixin";
+@import "./reset";
+html,
+body {
+    font-family: $josefinSans;
+    font-size: 14px;
+    font-weight: $fw;
+}
+
+.header {
+    min-height: 100vh;
+    background-image: url(../assets/img/background-main.jpg);
+    @include background;
+    position: relative;
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0 15px;
+    margin: $mc;
+}
+
+.header-inner {
+    @include flex(space-between, center, column);
+    padding-top: 264px;
+    .header-title {
+        margin-bottom: 11px;
+        font-family: $josefinSans;
+        text-transform: $textTransform;
+        letter-spacing: 4.8px;
+        color: $white;
+    }
+    .header-subtitle {
+        font-family: $josefinSans;
+        font-weight: $fw;
+        color: $white;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 6.82px;
+        margin-bottom: 48px;
+    }
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 653px;
+    background-color: #fff;
+    margin-bottom: 120px;
+}
+
+.search-form-field {
+    width: 100%;
+    min-height: 63px;
+    text-align: center;
+    background-color: $white;
+    &::placeholder {
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        color: #999999;
+    }
+}
+
+.search-form-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 153px;
+    background-color: $purple;
+    border: 2px solid $white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    span {
+        display: block;
+        margin-left: 0.3em;
+        transition: all 0.3s ease-in-out;
+        font-family: $aleo;
+        color: $white;
+        text-transform: $textTransform;
+        text-align: center;
+        letter-spacing: 1.4px;
+    }
+    svg {
+        display: block;
+        transform-origin: center center;
+        transition: transform 0.3s ease-in-out;
+        width: 20px;
+        height: 20px;
+        fill: #dadada;
+        margin-left: 10px;
+    }
+}
+
+.search-form-btn:hover {
+    border-color: $purple;
+    color: $purple;
+    transform: translateY(-5px) scale(1.05);
+}
+
+.header-scroll {
+    text-align: center;
+    p,
+    .arrow-down {
+        text-transform: $textTransform;
+        letter-spacing: 2.8px;
+        color: $white;
+        transition: 1s ease-in-out;
+    }
+    .arrow-down:hover {
+        transform: translateY(10px);
+    }
+}
+
+.header-bottom {
+    position: absolute;
+    bottom: 0;
+    background: $purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    background-color: $purple;
+}
+
+.nav-menu {
+    @include flex(space-between, center, row);
+    .nav-logo-link {
+        font-family: $josefinSans;
+        text-transform: $textTransform;
+        color: $white;
+        letter-spacing: 2.4px;
+    }
+    .nav-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+    .nav-link {
+        @include font;
+        text-transform: $textTransform;
+        &:hover {
+            text-decoration: underline;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+}
+
+.section-why-us {
+    @include flex(center, center, column);
+    background-image: url(../assets/img/why-bc.jpg);
+    @include background;
+    min-height: 100vh;
+}
+
+.container-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-content-column1 {
+    align-self: flex-end;
+    max-width: 560px;
+    .content-title {
+        @include font;
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    p {
+        font-family: $josefinSans;
+        color: $text;
+        letter-spacing: 1.6px;
+        margin-bottom: 30px;
+    }
+}
+
+.section-btn {
+    position: relative;
+    display: inline-block;
+    max-width: 228px;
+    width: 100%;
+    height: 63px;
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: $white;
+    background: $purple;
+    text-transform: $textTransform;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 $purple;
+    &:hover {
+        color: $purple;
+        box-shadow: inset 0 -100px 0 0 $white;
+    }
+    &:active {
+        transform: scale(0.9);
+    }
+}
+
+.section-content-column2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 623px;
+    width: 100%;
+    img {
+        width: 100%;
+    }
+    .first-pic {
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    .second-pic {
+        align-self: flex-end;
+    }
+}
+
+.section-steps {
+    padding: 123px 0 59px;
+    background: #333333;
+}
+
+.row-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h4 {
+        font-family: $aleo;
+        font-size: 36px;
+        line-height: $lh;
+        color: $text;
+        text-align: center;
+    }
+    svg {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 38px;
+        transition-duration: 1s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+.section-spain-content {
+    background-image: url(../assets/img/spain-bc.jpg);
+    @include background;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.section-container {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
+.spain-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 543px;
+    width: 100%;
+    height: 374px;
+    background: #232323;
+    opacity: 0.9;
+    padding-left: 30px;
+    p {
+        font-family: $josefinSans;
+        font-size: $textSize;
+        color: $text;
+        line-height: $lh;
+        margin-bottom: 46px;
+    }
+}
+
+.spain-title {
+    @include title;
+    margin-bottom: 23px;
+}
+
+.spain-subtitle {
+    @include subtitle;
+    margin-bottom: 13px;
+}
+
+.section-spain-content-2 {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    background-image: url(../assets/img/spain-2-bc.jpg);
+    @include background;
+}
+
+.section-container-2 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    padding-top: 227px;
+}
+
+.section-review-content {
+    min-height: 100vh;
+    background-image: url(../assets/img/review-bc.jpg);
+    background-position: 30% 0;
+    @include background;
+}
+
+.review-title {
+    padding-top: 128px;
+    margin-bottom: 91px;
+    text-align: center;
+    font-size: 36px;
+    @include font;
+}
+
+.review-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-info {
+    display: flex;
+    width: 100%;
+}
+
+.text-wrapper {
+    padding: 50px 50px 44px 60px;
+    text-align: start;
+    background-color: #333;
+    h4 {
+        font-family: $josefinSans;
+        font-weight: $fw;
+        font-size: 20px;
+        color: $text;
+        line-height: $lh;
+        text-transform: $textTransform;
+    }
+    p {
+        font-family: $josefinSans;
+        font-size: $textSize;
+        color: $text;
+        line-height: $lh;
+    }
+}
+
+.fa-quote-left {
+    color: $purple;
+    font-size: 36px;
+    margin-right: 10px;
+}
+
+.footer {
+    min-height: 271px;
+    background-color: #232323;
+}
+
+.footer-container {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.footer-title {
+    font-family: $josefinSans;
+    font-weight: 700;
+    line-height: $lh;
+    text-transform: $textTransform;
+    font-size: 24px;
+    color: $white;
+    letter-spacing: 3.36px;
+    margin-bottom: 8px;
+}
+
+.footer-subtitle {
+    @include subtitle;
+    letter-spacing: 1.6px;
+    margin-bottom: 16px;
+}
+
+.footer-contact-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    svg {
+        width: 47px;
+        height: 26px;
+        fill: $text;
+        &:hover {
+            fill: $purple;
+        }
+    }
+}

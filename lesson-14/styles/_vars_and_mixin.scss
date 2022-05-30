@@ -1,0 +1,52 @@
+$white: #FFFFFF;
+$text: #E8E8E8;
+$subtitle: #FEFEFE;
+$purple: #5474FD;
+$bc: no-repeat,
+cover,
+center;
+$josefinSans: 'Josefin Sans',
+sans-serif;
+$aleo: 'Aleo',
+serif;
+$fw:400;
+$textSize: 16px;
+$textTransform: uppercase;
+$lh: 26px;
+$mc: 0 auto;
+@mixin flex ($jc, $ai, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $direction;
+}
+
+@mixin background {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin font {
+    font-family: $aleo;
+    font-style: $fw;
+    color: $white;
+    line-height: $lh;
+}
+
+@mixin title {
+    font-family: $josefinSans;
+    font-style: $fw;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: $text;
+    line-height: $lh;
+}
+
+@mixin subtitle {
+    font-family: $josefinSans;
+    font-style: $fw;
+    line-height: $lh;
+    color: $white;
+    text-transform: $textTransform;
+}
